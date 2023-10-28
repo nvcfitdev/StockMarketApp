@@ -35,14 +35,16 @@ fun CompanyListingsScreen(
         OutlinedTextField(
             value = state.searchQuery, onValueChange = {
                 viewModel.onEvent(CompanyListingsEvent.OnSearchQueryChange(it))
-            }, modifier = Modifier
+            },
+            modifier = Modifier
                 .fillMaxWidth()
                 .padding(16.dp),
             placeholder = {
                 Text(text = "Search for a stock..")
             },
-            maxLines = 1, singleLine = true
-        ),
+            maxLines = 1,
+            singleLine = true
+        )
         SwipeRefresh(
             state = swipeRefreshState,
             onRefresh = { viewModel.onEvent(CompanyListingsEvent.Refresh) }) {
