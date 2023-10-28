@@ -1,4 +1,4 @@
-package com.nvcfitdev.stockmarketapp.ui.theme
+package com.nvcfitdev.stockmarketapp.presentation.theme
 
 import android.app.Activity
 import android.os.Build

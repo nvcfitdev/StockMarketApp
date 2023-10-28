@@ -1,4 +1,4 @@
-package com.nvcfitdev.stockmarketapp.ui.theme
+package com.nvcfitdev.stockmarketapp.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
