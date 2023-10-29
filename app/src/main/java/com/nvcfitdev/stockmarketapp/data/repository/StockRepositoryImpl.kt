@@ -1,5 +1,6 @@
 package com.nvcfitdev.stockmarketapp.data.repository
 
+import android.util.Log
 import com.nvcfitdev.stockmarketapp.data.csv.CSVParser
 import com.nvcfitdev.stockmarketapp.data.local.StockDatabase
 import com.nvcfitdev.stockmarketapp.data.mapper.toCompanyListing
@@ -63,6 +64,8 @@ class StockRepositoryImpl @Inject constructor(
                 emit(HttpResult.Failed(code = -1, message = e.message, null))
                 null
             }
+
+            Log.i("TEST", remoteListings.toString())
 
             //Load into DB then use data to display in presentation layer..
             remoteListings?.let { data ->
