@@ -10,3 +10,7 @@
 - Clean Architecture
 - MVVM-Flow
 - Room DB
+
+## Disclaimer
+App still needs work lmao, Mock API has limited tries sadly. Also, you'll experience a blown up Market Chart lol. 
+
